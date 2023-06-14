@@ -1,0 +1,214 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    list-style: none;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+
+}
+
+container {
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+
+}
+.header {
+    height: 100px;
+    width: 100%;
+    background: lightgray;
+    text-align: center;
+
+}
+
+.btn-menu {
+    height: 30px;
+    width: 30px;
+    transform: translateY(40px);
+    margin-left: 5px;
+    
+}
+.line{
+    height: 3px;
+    width: 100%;
+    border-radius: 5%;
+    background: black;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.check {
+    display: none;
+    
+}
+.nav-container {
+    height: .5px;
+    width: 100%;
+    background: beige;
+    align-items: center;
+    text-align: center;
+    transition: 1s;
+    position: relative;
+   
+}
+.show  {
+    display: none;
+
+}
+.nav-container nav ul li{
+    margin: 10px;
+    font-family: fantasy;
+ 
+
+}
+
+.nav-desktop {
+    display: none;
+
+}
+
+
+section{
+    display: flex;
+    width: 600px;
+    height: 430px;
+
+}
+section img{
+    width: 0;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: .8;
+    transition: .5s ease;
+}
+
+section img:hover{
+    cursor: crosshair;
+    width: 300px;
+    opacity: 1;
+    filter: contrast(120%);
+
+}
+.footer{
+    height: 100px;
+    width: 100%;
+    background: lightgray;
+    text-align: center;
+    text-decoration: dashed;
+
+}
+/*imicio home*/
+
+.bienvenidos {
+    width: 75%;
+    padding-right: 10px;
+    box-sizing: border-box;
+
+}
+.testimonios {
+    width: 25%;
+
+}
+
+.columnas {
+    display: flex;
+    justify-content: space-between;
+}
+.bienvenido p {
+    font-size: 20px;
+
+}
+.testimonio {
+    background-color: #ccc;
+    padding: 16px;
+
+}
+.testimonio .cita {
+    font-weight: bold;
+    font-style: italic;
+    font-size: 22px;
+    display: block;
+}
+.testimonio .autor {
+    font-size: 12px;
+    text-align: center;
+    display: block;
+    margin: 12px 0;
+     
+    
+}
+/*termino home*/
+
+/*inicio de nosotros*/
+
+.historia p {
+    font-size: 12px;
+}
+.persona {
+    border: 1px solid #a07c7c;
+    border-radius: 5px;
+    width: 18%;
+    text-align: center;
+    padding: 13px;
+    box-sizing: border-box;
+    background-color: #a07c7c;
+
+}
+.personas {
+    display: flex;
+    justify-content: space-between;
+}
+.persona img {
+    border-radius: 50%;
+    max-width: 60%;
+    box-shadow: 0 0 5px  rgb(87, 18, 18);
+
+
+}
+.persona h5,
+.personas h6 {
+    margin: 0;
+    font-weight: normal;
+
+}
+.persona p{
+    font-size: 12px;
+    
+}
+
+/*fin del nosotros*/
+
+
+/*inicio de servicios*/
+
+.servicio {
+    border: 1pc solid #a07c7c;
+    border-radius: 10px;
+    padding: 16px;
+    margin: 16px 0;
+    display: flex;
+    gap: 32px;
+    align-items: center;
+}
+.servicio .info h4 {
+    color: rgb(255, 30, 169);
+    font-weight: 500px;
+    font-style:normal;
+    border-bottom: 1px solid darkslateblue;
+    padding-bottom: 10px;
+}
+.servicio .info p {
+    font-size: 13px;
+    line-height: 19px;
+
+}
+.servicio img {
+    border-radius: 13px;
+    display: block;
+    max-width: 225px;
+}
+.servicio:nth-child(even) {
+    flex-direction: row-reverse;
+    
+}
